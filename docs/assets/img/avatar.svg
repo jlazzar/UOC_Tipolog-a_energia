@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 470" role="img" aria-labelledby="avatarTitle">
+  <title id="avatarTitle">Retrato ilustrado en estilo anime de Juanma Larrañaga</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#43205B"/>
+      <stop offset="55%" stop-color="#2A1140"/>
+      <stop offset="100%" stop-color="#180C28"/>
+    </linearGradient>
+    <linearGradient id="sunG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB65C"/>
+      <stop offset="100%" stop-color="#FF6FA5"/>
+    </linearGradient>
+    <linearGradient id="hairG" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#4B2A6E"/>
+      <stop offset="60%" stop-color="#2A163F"/>
+      <stop offset="100%" stop-color="#1B0E2B"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#262041"/>
+      <stop offset="100%" stop-color="#15102A"/>
+    </linearGradient>
+    <linearGradient id="irisG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD79A"/>
+      <stop offset="60%" stop-color="#E08A2E"/>
+      <stop offset="100%" stop-color="#8A3F18"/>
+    </linearGradient>
+    <pattern id="tone" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#FF6FA5" opacity="0.4"/>
+    </pattern>
+    <clipPath id="frame"><rect x="0" y="0" width="400" height="470"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="400" height="470" fill="url(#sky)"/>
+    <circle cx="212" cy="176" r="150" fill="url(#sunG)" opacity="0.55"/>
+    <rect width="400" height="470" fill="url(#tone)" opacity="0.5"/>
+
+    <!-- lineas de velocidad -->
+    <g stroke="#F7EFE4" stroke-width="2" opacity="0.16">
+      <path d="M0 60 L120 36"/>
+      <path d="M0 108 L96 92"/>
+      <path d="M400 76 L296 52"/>
+      <path d="M400 128 L316 114"/>
+      <path d="M0 392 L130 372"/>
+      <path d="M400 404 L282 384"/>
+    </g>
+
+    <!-- hombros y chaqueta -->
+    <path d="M60 470 C68 384 118 340 176 322 L200 356 L224 322 C282 340 332 384 340 470 Z" fill="url(#jacket)" stroke="#0E0719" stroke-width="3"/>
+    <path d="M176 322 L200 356 L224 322 L214 314 L200 336 L186 314 Z" fill="#F7EFE4" opacity="0.92"/>
+    <path d="M176 322 C168 350 168 392 174 470" fill="none" stroke="#FF6FA5" stroke-width="4"/>
+    <path d="M224 322 C232 350 232 392 226 470" fill="none" stroke="#6FE4F2" stroke-width="4"/>
+
+    <!-- cuello -->
+    <path d="M183 250 L183 300 C183 318 217 318 217 300 L217 250 Z" fill="#E8B894"/>
+    <path d="M183 268 C192 286 210 288 217 276 L217 250 L183 250 Z" fill="#C88F6E" opacity="0.55"/>
+
+    <!-- cara -->
+    <path d="M139 148 C139 99 166 70 200 70 C234 70 261 99 261 148 C261 199 243 240 200 262 C157 240 139 199 139 148 Z" fill="#F2C9A6" stroke="#7A4A34" stroke-width="2"/>
+    <path d="M139 152 C132 150 128 160 133 172 C136 180 142 182 144 176 Z" fill="#F2C9A6" stroke="#7A4A34" stroke-width="2"/>
+    <path d="M261 152 C268 150 272 160 267 172 C264 180 258 182 256 176 Z" fill="#F2C9A6" stroke="#7A4A34" stroke-width="2"/>
+
+    <!-- cejas -->
+    <path d="M155 141 C164 133 182 133 190 139" fill="none" stroke="#2A163F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M210 139 C218 133 236 133 245 141" fill="none" stroke="#2A163F" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- ojos -->
+    <g>
+      <path d="M155 168 C160 152 182 150 189 166 C185 186 161 187 155 168 Z" fill="#FFFDF7"/>
+      <circle cx="172" cy="168" r="11" fill="url(#irisG)"/>
+      <circle cx="172" cy="170" r="4.6" fill="#1B0E2B"/>
+      <circle cx="167" cy="162" r="3.6" fill="#FFFDF7"/>
+      <circle cx="177" cy="175" r="2" fill="#FFFDF7" opacity="0.8"/>
+      <path d="M152 165 C158 148 184 145 192 162" fill="none" stroke="#221037" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M211 166 C218 150 240 152 245 168 C239 187 215 186 211 166 Z" fill="#FFFDF7"/>
+      <circle cx="228" cy="168" r="11" fill="url(#irisG)"/>
+      <circle cx="228" cy="170" r="4.6" fill="#1B0E2B"/>
+      <circle cx="223" cy="162" r="3.6" fill="#FFFDF7"/>
+      <circle cx="233" cy="175" r="2" fill="#FFFDF7" opacity="0.8"/>
+      <path d="M208 162 C216 145 242 148 248 165" fill="none" stroke="#221037" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <!-- nariz y boca -->
+    <path d="M199 196 C204 200 205 205 199 207" fill="none" stroke="#B07A57" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M188 226 C196 233 208 233 214 225" fill="none" stroke="#8E4A44" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- rubor -->
+    <g fill="#FF6FA5" opacity="0.28">
+      <ellipse cx="160" cy="200" rx="14" ry="7"/>
+      <ellipse cx="240" cy="200" rx="14" ry="7"/>
+    </g>
+
+    <!-- pelo -->
+    <path d="M134 168 C120 104 152 52 200 52 C250 52 282 96 268 170 C264 138 254 116 242 104 C238 128 214 142 190 134 C176 150 168 158 152 156 C146 160 140 164 134 168 Z" fill="url(#hairG)"/>
+    <path d="M200 52 C168 56 148 78 142 106 C156 84 176 70 200 66 Z" fill="#6A3E96" opacity="0.55"/>
+    <path d="M262 96 C272 116 274 142 268 170 C280 128 278 92 262 96 Z" fill="#6A3E96" opacity="0.4"/>
+    <path d="M136 160 C126 200 128 246 140 282 C136 240 138 198 146 170 Z" fill="url(#hairG)"/>
+    <path d="M264 160 C276 200 274 248 260 286 C266 242 264 198 256 170 Z" fill="url(#hairG)"/>
+    <path d="M186 60 C176 78 160 92 146 100 C168 96 188 84 198 66 Z" fill="#8A55BE" opacity="0.5"/>
+  </g>
+</svg>

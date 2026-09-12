@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juanma Larrañaga · Datos</title>
+<meta name="description" content="Portfolio de Juan Manuel Larrañaga Prieto: extracción, limpieza y análisis de datos con Python. Proyecto de scraping del mix de generación eléctrica de España.">
+<meta name="author" content="Juan Manuel Larrañaga Prieto">
+<meta property="og:title" content="Juanma Larrañaga · Datos">
+<meta property="og:description" content="Extracción, limpieza y análisis de datos con Python. Portfolio en estilo anime.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14091F">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#perfil">Saltar al contenido</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__sig" href="#top">JUANMA <b>L.</b> <span>ラランニャガ</span></a>
+    <nav aria-label="Secciones">
+      <ul class="nav__links">
+        <li><a href="#perfil"><i>人物</i>Perfil</a></li>
+        <li><a href="#habilidades"><i>能力</i>Habilidades</a></li>
+        <li><a href="#proyectos"><i>作品</i>Proyectos</a></li>
+        <li><a href="#trayectoria"><i>経歴</i>Trayectoria</a></li>
+        <li><a href="#contacto"><i>連絡</i>Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__sun" aria-hidden="true"></div>
+    <canvas id="petals" aria-hidden="true"></canvas>
+    <div class="speedlines" aria-hidden="true"></div>
+
+    <div class="wrap hero__grid">
+      <div class="cutin">
+        <p class="hero__eyebrow">Datos · Python · Análisis</p>
+        <h1>Juanma<span class="l2">Larrañaga</span></h1>
+        <p class="hero__kana">フアンマ・ラランニャガ・プリエト</p>
+        <p class="hero__role">
+          Busco los datos donde están —aunque estén dentro de una tabla que el navegador
+          dibuja con JavaScript—, los limpio y los convierto en algo que se entienda de
+          un vistazo. Formación en ciencia de datos en la <strong>UOC</strong>.
+        </p>
+        <div class="hero__cta">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="https://github.com/jlazzar" rel="me noopener" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <aside class="statcard cutin cutin--2" aria-label="Resumen del último proyecto">
+        <div class="statcard__head">
+          <b>Última misión</b>
+          <span>現在</span>
+        </div>
+        <dl>
+          <div><dt>Registros capturados</dt><dd>361</dd></div>
+          <div><dt>Tecnologías</dt><dd>12</dd></div>
+          <div><dt>Resolución</dt><dd>5 min</dd></div>
+          <div><dt>Cuota renovable</dt><dd>63,1 %</dd></div>
+        </dl>
+        <footer>
+          Mix de generación peninsular capturado de demanda.ree.es (Red Eléctrica)
+          entre el 12 y el 14 de abril de 2024.
+        </footer>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ PERFIL ============ -->
+  <section class="section" id="perfil">
+    <div class="wrap">
+      <header class="shead">
+        <span class="shead__kanji" aria-hidden="true">人物</span>
+        <h2>Perfil</h2>
+      </header>
+
+      <div class="profile">
+        <figure class="portrait">
+          <img src="assets/img/avatar.svg" alt="Retrato ilustrado en estilo anime de Juanma Larrañaga" width="400" height="470">
+          <figcaption>Juan Manuel L. Prieto</figcaption>
+        </figure>
+
+        <div class="prose">
+          <p>
+            Me llamo <b>Juan Manuel Larrañaga Prieto</b> y me interesa la parte del trabajo con
+            datos que nadie enseña en los cursos: el momento en el que la fuente no tiene API,
+            ni CSV, ni permiso para ponértelo fácil.
+          </p>
+          <p>
+            Mi primer proyecto serio fue exactamente eso. Red Eléctrica publica la generación
+            eléctrica de la península en una tabla que se pinta desde JavaScript, así que la
+            descarga directa no sirve: hay que abrir el navegador desde Python, esperar a que
+            el DOM termine de cargarse y leer la tabla por dentro. De ahí salieron 361 registros
+            a resolución de cinco minutos y un CSV que sí se puede analizar.
+          </p>
+          <p>
+            Desde entonces trabajo ese ciclo completo —<b>capturar, limpiar, documentar y
+            contar</b>— con Python como herramienta principal. Me gusta que un análisis termine
+            en una frase que alguien pueda usar, no en una tabla de 3.000 filas.
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Selenium</li>
+            <li>BeautifulSoup</li>
+            <li>pandas</li>
+            <li>SQL</li>
+            <li>Git &amp; GitHub</li>
+            <li>Web scraping</li>
+            <li>Visualización</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HABILIDADES ============ -->
+  <section class="section" id="habilidades">
+    <div class="wrap">
+      <header class="shead">
+        <span class="shead__kanji" aria-hidden="true">能力</span>
+        <h2>Habilidades</h2>
+        <p>Herramientas que uso de verdad en proyectos, con el nivel al que las manejo hoy.</p>
+      </header>
+
+      <div class="status">
+        <div class="status__bar">
+          <b>Ficha técnica</b>
+          <span>STATUS — 2026</span>
+        </div>
+
+        <!-- EDITABLE: cambia el texto y el valor de --lv (0–100 %) de cada barra -->
+        <div class="skills">
+          <div class="skill">
+            <div class="skill__top"><span class="skill__name">Python</span><span class="skill__lv">LV 80</span></div>
+            <div class="skill__track"><div class="skill__fill" style="--lv:80%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span class="skill__name">Web scraping</span><span class="skill__lv">LV 75</span></div>
+            <div class="skill__track"><div class="skill__fill" style="--lv:75%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span class="skill__name">pandas · análisis</span><span class="skill__lv">LV 70</span></div>
+            <div class="skill__track"><div class="skill__fill" style="--lv:70%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span class="skill__name">SQL</span><span class="skill__lv">LV 60</span></div>
+            <div class="skill__track"><div class="skill__fill" style="--lv:60%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span class="skill__name">Visualización</span><span class="skill__lv">LV 60</span></div>
+            <div class="skill__track"><div class="skill__fill" style="--lv:60%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span class="skill__name">Git &amp; GitHub</span><span class="skill__lv">LV 65</span></div>
+            <div class="skill__track"><div class="skill__fill" style="--lv:65%"></div></div>
+          </div>
+        </div>
+
+        <p class="status__note">
+          Autoevaluación orientativa sobre proyectos propios, no una certificación.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section class="section" id="proyectos">
+    <div class="wrap">
+      <header class="shead">
+        <span class="shead__kanji" aria-hidden="true">作品</span>
+        <h2>Proyectos</h2>
+        <p>Lo que he construido, con la fuente y el método a la vista.</p>
+      </header>
+
+      <div class="projects">
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__ep">Proyecto 01</span>
+            <span class="card__src">abril 2024 · UOC</span>
+          </div>
+          <h3>Generación eléctrica de España, cada cinco minutos</h3>
+          <p class="card__lead">
+            Red Eléctrica publica el mix de generación peninsular en una tabla que se genera
+            con JavaScript: no hay archivo que descargar. El scraper abre la página con
+            Selenium, espera a que el DOM esté completo y BeautifulSoup extrae las doce
+            tecnologías de generación registro a registro hasta dejarlas en un CSV.
+          </p>
+
+          <div class="card__body">
+            <dl class="spec">
+              <div><dt>Fuente</dt><dd>demanda.ree.es · Red Eléctrica de España</dd></div>
+              <div><dt>Ventana</dt><dd>12–14 abril 2024 · 361 registros</dd></div>
+              <div><dt>Stack</dt><dd>Python · Selenium · BeautifulSoup4 · webdriver-manager</dd></div>
+              <div><dt>Salida</dt><dd>CSV con 12 tecnologías, intercambios internacionales y enlace balear</dd></div>
+              <div><dt>Contexto</dt><dd>PR1 · Tipología y ciclo de vida del dato</dd></div>
+            </dl>
+
+            <figure class="figure">
+              <p class="figure__title">Mix de generación · 13 de abril de 2024</p>
+              <p class="figure__sub">Potencia horaria en MW, sistema peninsular</p>
+
+              <ul class="legend">
+                <li><i style="--swatch:var(--c-solar)"></i>Solar FV</li>
+                <li><i style="--swatch:var(--c-hidro)"></i>Hidráulica</li>
+                <li><i style="--swatch:var(--c-nuclear)"></i>Nuclear</li>
+                <li><i style="--swatch:var(--c-eolica)"></i>Eólica</li>
+              </ul>
+
+              <div class="chart-wrap">
+                <div class="chart-scroll">
+                  <svg class="chart" id="mixChart" viewBox="0 0 760 300" role="img"
+                       aria-label="Gráfico de líneas de la potencia horaria por tecnología el 13 de abril de 2024. La solar fotovoltaica alcanza 12.815 MW a las 10:00 mientras la hidráulica desciende hasta 1.909 MW a las 15:00.">
+                    <!-- rejilla -->
+                    <g class="grid">
+                      <line x1="54" y1="252" x2="720" y2="252"/>
+                      <line x1="54" y1="201.2" x2="720" y2="201.2"/>
+                      <line x1="54" y1="150.5" x2="720" y2="150.5"/>
+                      <line x1="54" y1="99.7" x2="720" y2="99.7"/>
+                      <line x1="54" y1="48.9" x2="720" y2="48.9"/>
+                    </g>
+                    <line class="axis" x1="54" y1="32" x2="54" y2="252"/>
+
+                    <!-- eje Y -->
+                    <g text-anchor="end">
+                      <text x="46" y="22">MW</text>
+                      <text x="46" y="255">0</text>
+                      <text x="46" y="204.5">3.000</text>
+                      <text x="46" y="153.8">6.000</text>
+                      <text x="46" y="103">9.000</text>
+                      <text x="46" y="52.2">12.000</text>
+                    </g>
+
+                    <!-- eje X -->
+                    <g text-anchor="middle">
+                      <text x="54" y="272">00 h</text>
+                      <text x="169.8" y="272">04 h</text>
+                      <text x="285.7" y="272">08 h</text>
+                      <text x="401.5" y="272">12 h</text>
+                      <text x="517.3" y="272">16 h</text>
+                      <text x="633.1" y="272">20 h</text>
+                      <text x="720" y="272">23 h</text>
+                    </g>
+
+                    <polyline class="serie" stroke="var(--c-eolica)" points="54.0,208.0 83.0,207.8 111.9,210.5 140.9,214.7 169.8,221.0 198.8,225.6 227.7,226.9 256.7,224.7 285.7,227.5 314.6,229.5 343.6,235.4 372.5,236.6 401.5,237.7 430.4,237.8 459.4,236.9 488.3,238.7 517.3,238.3 546.3,234.1 575.2,218.8 604.2,219.0 633.1,203.4 662.1,199.6 691.0,196.2 720.0,196.5"/>
+                    <polyline class="serie" stroke="var(--c-nuclear)" points="54.0,179.2 83.0,179.1 111.9,179.1 140.9,179.1 169.8,177.2 198.8,177.0 227.7,177.0 256.7,177.0 285.7,176.4 314.6,175.1 343.6,173.5 372.5,173.4 401.5,172.5 430.4,171.7 459.4,171.2 488.3,170.9 517.3,170.8 546.3,170.1 575.2,168.6 604.2,167.2 633.1,166.6 662.1,166.1 691.0,165.6 720.0,165.0"/>
+                    <polyline class="serie" stroke="var(--c-hidro)" points="54.0,101.7 83.0,99.6 111.9,117.5 140.9,114.2 169.8,122.0 198.8,121.9 227.7,120.9 256.7,108.8 285.7,115.5 314.6,147.9 343.6,193.1 372.5,195.9 401.5,216.4 430.4,212.3 459.4,213.3 488.3,219.7 517.3,218.7 546.3,202.9 575.2,199.8 604.2,178.0 633.1,120.7 662.1,88.2 691.0,91.4 720.0,109.0"/>
+                    <polyline class="serie" stroke="var(--c-solar)" points="54.0,251.7 83.0,251.8 111.9,251.8 140.9,251.8 169.8,251.8 198.8,251.8 227.7,251.8 256.7,251.8 285.7,242.4 314.6,132.0 343.6,35.1 372.5,45.9 401.5,62.3 430.4,65.3 459.4,64.3 488.3,70.2 517.3,68.2 546.3,62.7 575.2,38.1 604.2,78.7 633.1,197.6 662.1,248.1 691.0,248.3 720.0,248.3"/>
+
+                    <!-- etiquetas directas -->
+                    <text class="lbl" x="352" y="30" fill="var(--c-solar)">Solar FV</text>
+                    <text class="lbl" x="62" y="92" fill="var(--c-hidro)">Hidráulica</text>
+                    <text class="lbl" x="716" y="157" text-anchor="end" fill="var(--c-nuclear)">Nuclear</text>
+                    <text class="lbl" x="466" y="226" fill="var(--c-eolica)">Eólica</text>
+
+                    <g id="cursor" style="display:none">
+                      <line x1="0" y1="32" x2="0" y2="252"/>
+                      <circle r="4.5" fill="var(--c-solar)"/>
+                      <circle r="4.5" fill="var(--c-hidro)"/>
+                      <circle r="4.5" fill="var(--c-nuclear)"/>
+                      <circle r="4.5" fill="var(--c-eolica)"/>
+                    </g>
+                    <rect class="hit" id="chartHit" x="54" y="32" width="666" height="220"/>
+                  </svg>
+                </div>
+                <div class="tip" id="chartTip" role="status" aria-live="off"></div>
+              </div>
+
+              <figcaption>
+                A las 10:00 la fotovoltaica marcó 12.815 MW y la hidráulica bajó de 8.884 a
+                1.909 MW: el agua se guarda mientras el sol trabaja. Ese día las renovables
+                cubrieron el 63,1 % de la generación.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card__links">
+            <a class="btn" href="https://github.com/jlazzar/UOC_Tipolog-a_energia" rel="noopener" target="_blank">Repositorio ↗</a>
+            <a class="btn btn--ghost" href="https://github.com/jlazzar/UOC_Tipolog-a_energia/blob/main/Generacion_de_energia_en_Espanha.csv" rel="noopener" target="_blank">Ver el CSV ↗</a>
+          </div>
+        </article>
+
+        <!-- EDITABLE: sustituye esta tarjeta por tu siguiente proyecto -->
+        <article class="next">
+          <div class="card__top"><span class="card__ep" style="color:var(--amber)">Próximo episodio</span></div>
+          <h3>En producción</h3>
+          <p>
+            El siguiente proyecto está en marcha: análisis y visualización sobre la serie
+            completa de generación, con limpieza reproducible y control de calidad del dato.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAYECTORIA ============ -->
+  <section class="section" id="trayectoria">
+    <div class="wrap">
+      <header class="shead">
+        <span class="shead__kanji" aria-hidden="true">経歴</span>
+        <h2>Trayectoria</h2>
+        <p>En orden, que es como se entienden las historias.</p>
+      </header>
+
+      <!-- EDITABLE: fechas, puestos y descripciones -->
+      <ol class="timeline">
+        <li class="ep">
+          <p class="ep__no">Episodio 01</p>
+          <h3>Amazon</h3>
+          <p class="ep__meta">Experiencia profesional</p>
+          <p>
+            Un entorno donde todo se mide: volúmenes, tiempos y procesos. El mejor sitio para
+            aprender que un dato solo vale si alguien puede tomar una decisión con él.
+          </p>
+        </li>
+        <li class="ep">
+          <p class="ep__no">Episodio 02</p>
+          <h3>Ciencia de datos · UOC</h3>
+          <p class="ep__meta">Formación · 2024 — actualidad</p>
+          <p>
+            Tipología y ciclo de vida del dato: de dónde viene un dato, cómo se captura de
+            forma reproducible y respetando las condiciones de la fuente, y cómo se documenta
+            para que otra persona pueda repetir el proceso.
+          </p>
+        </li>
+        <li class="ep">
+          <p class="ep__no">Episodio 03</p>
+          <h3>Primer dataset propio</h3>
+          <p class="ep__meta">Abril 2024</p>
+          <p>
+            Scraper de la generación eléctrica peninsular: 361 registros, 12 tecnologías y un
+            CSV publicado en GitHub. El proyecto que convirtió la teoría en un archivo con el
+            que se puede trabajar.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section contact" id="contacto">
+    <div class="wrap contact__grid">
+      <div>
+        <span class="shead__kanji" aria-hidden="true">連絡</span>
+        <h2>¿Hablamos?</h2>
+        <p>
+          Si trabajas con datos que todavía no están en una tabla limpia, escríbeme. Respondo
+          antes que el próximo episodio.
+        </p>
+      </div>
+      <!-- EDITABLE: añade aquí tu correo o tu CV en PDF -->
+      <ul class="links">
+        <li><a href="https://github.com/jlazzar" rel="me noopener" target="_blank">GitHub<span>@jlazzar ↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/juan-manuel-larra%C3%B1aga-prieto/" rel="me noopener" target="_blank">LinkedIn<span>Perfil profesional ↗</span></a></li>
+        <li><a href="https://github.com/jlazzar/UOC_Tipolog-a_energia" rel="noopener" target="_blank">Proyecto de energía<span>Código y datos ↗</span></a></li>
+      </ul>
+    </div>
+
+    <div class="wrap foot">
+      <span>© 2026 Juan Manuel Larrañaga Prieto</span>
+      <span class="jp">ご覧いただきありがとうございました</span>
+    </div>
+  </section>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
